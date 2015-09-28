@@ -13,6 +13,8 @@ class Player {
         int road = in.nextInt(); // the length of the road before the gap.
         int gap = in.nextInt(); // the length of the gap.
         int platform = in.nextInt(); // the length of the landing platform.
+		
+		gap = gap + 1;
 
         // game loop
         while (true) {
