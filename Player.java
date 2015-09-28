@@ -21,9 +21,17 @@ class Player {
 
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
-              if (coordX == road){
-                System.out.println("JUMP"); // A single line containing one of 4 keywords: SPEED, SLOW, JUMP, WAIT.
-             }
+              if (speed == gap){
+                System.out.println("WAIT"); // A single line containing one of 4 keywords: SPEED, SLOW, JUMP, WAIT.
+				
+				if(coordX==road){
+					 System.out.println("JUMP");
+				}
+				
+				if(coordX==platform){
+					 System.out.println("SLOW");
+				}
+			 }
             
              else{
                   System.out.println("SPEED");
