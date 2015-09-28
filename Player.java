@@ -28,20 +28,17 @@ class Player {
 				System.out.println("JUMP");
 			}
 					
-			else if(coordX > road -1){
+		
+			else if (speed > gap + 1 || coordX >= road + gap ){
 				System.out.println("SLOW");
 			}
 			
-			else if (speed == gap + 1){
-				System.out.println("WAIT");
-			}
-			
-			else if (speed == gap + 1){
-				System.out.println("SLOW");
+			else if (speed < gap + 1){
+				System.out.println("SPEED");
 			}
 			
             else{
-                System.out.println("SPEED");
+                System.out.println("WAIT");
                 }
                 
           }
